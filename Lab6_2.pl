@@ -35,3 +35,14 @@ movimiento(estado(A,B,C,D,E,F,G), estado(A2,B2,C2,D2,E2,F2,G2), salta2Izq):- sal
 puede(Estado,_,[]) :-objetivo(Estado).
 puede(Estado, Visitados, [Operador | Operadores]) :-movimiento(Estado, EstadoSig, Operador),\+ member(EstadoSig, Visitados), puede(EstadoSig, [EstadoSig| Visitados], Operadores).
 puede(Estado, Camino):- puede(Estado,[Estado], Camino).
+
+
+
+
+
+
+
+
+
+
+
